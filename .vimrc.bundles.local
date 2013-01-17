@@ -1,4 +1,1 @@
-if !exists('g:spf13_bundle_groups')
-    let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'python', 'javascript', 'html', 'misc', 'scala']
-endif
 
