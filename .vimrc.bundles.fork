@@ -16,7 +16,6 @@ endif
         Bundle 'spf13/vim-colors'
         Bundle 'tpope/vim-surround'
         Bundle 'AutoClose'
-        Bundle 'Lokaltog/vim-powerline'
         Bundle 'Lokaltog/vim-easymotion'
     endif
 

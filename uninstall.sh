@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-endpath="$HOME/.spf13-vim-3"
+endpath="$HOME/.mikethemagic-vim"
 
 warn() {
     echo "$1" >&2
@@ -14,5 +14,7 @@ die() {
 rm $HOME/.vimrc
 rm $HOME/.vimrc.bundles
 rm $HOME/.vim
+rm $HOME/.vimrc.fork
+rm $HOME/.vimrc.bundles.fork
 
 rm -rf $endpath
