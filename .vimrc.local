@@ -1,3 +1,9 @@
+    " SnipMate {
+        " Setting the author var
+        " If forking, please overwrite in your .vimrc.local file
+        let g:snips_author = 'Michael Stangl <michael.stangl@gmail.com>'
+    " }
+
 nmap <F2> :w
 nmap <S-F2> :make
 nmap <C-F2> :make %<
@@ -31,6 +37,5 @@ nmap <F12> zf%]]
 nmap <S-F12> zO]]
 
 set hlsearch
+set incsearch
 
-UnBundle 'spf13/PIV'
-UnBundle 'scrooloose/syntastic'

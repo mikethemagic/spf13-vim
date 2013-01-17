@@ -9,10 +9,6 @@ if !exists("g:tax_override_snippets")
     Bundle 'taxilian/snipmate-snippets'
 endif
 
-" Color schemes
-    Bundle 'taxilian/Wombat'
-    Bundle 'taxilian/herald.vim'
-
 
 " General
     if !exists("g:tax_disable_general")
@@ -23,3 +19,5 @@ endif
         Bundle 'Lokaltog/vim-powerline'
         Bundle 'Lokaltog/vim-easymotion'
     endif
+
+
