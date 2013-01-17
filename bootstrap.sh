@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-endpath="$HOME/.spf13-vim-3"
+endpath="$HOME/.mikethemagic-vim"
 
 warn() {
     echo "$1" >&2
@@ -20,7 +20,7 @@ lnif() {
     fi
 }
 
-echo "Thanks for installing spf13-vim"
+echo "Thanks for installing mikes fork of spf13-vim"
 
 # Backup existing .vim stuff
 echo "backing up current vim config"
@@ -30,7 +30,7 @@ for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && [ ! -L $i ] && m
 
 if [ ! -e $endpath/.git ]; then
     echo "cloning spf13-vim"
-    git clone --recursive -b 3.0 http://github.com/spf13/spf13-vim.git $endpath
+    git clone --recursive -b 3.0 http://github.com/mikethemagic/spf13-vim.git $endpath
 else
     echo "updating spf13-vim"
     cd $endpath && git pull
