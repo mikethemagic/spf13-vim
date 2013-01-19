@@ -1,12 +1,20 @@
 if !exists("g:spf13_bundle_groups")
     let g:spf13_bundle_groups=['general','neocomplcache', 'programming', 'python', 'javascript', 'html', 'misc', 'scala', 'snipmate']
-        
 endif
+
+let g:spf13_override_snippets = 1
+
+if !exists("g:tax_override_snippets")
+    " Snippets
+    Bundle 'taxilian/snipmate-snippets'
+endif
+
 
 " General
     if !exists("g:tax_disable_general")
         Bundle 'altercation/vim-colors-solarized'
         Bundle 'spf13/vim-colors'
+        Bundle 'kien/ctrlp.vim'
         Bundle 'tpope/vim-surround'
         Bundle 'AutoClose'
         Bundle 'Lokaltog/vim-easymotion'
